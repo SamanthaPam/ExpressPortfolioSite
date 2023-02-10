@@ -1,0 +1,65 @@
+<!--
+File Name: contact.ejs
+Student's Name: Samantha Ortiz de Foronda Rojas
+StudentID: 301284463
+Date: 02/09/2023
+-->
+<%-include partials/header.ejs%>
+    <!-- Start Navbar -->
+            <%-include partials/main_nav.ejs%>
+         <!-- End Navbar -->
+        <!-- Start Banner Container -->
+        <body class="bg-light-gray">
+        <div class="panel panel-default">
+            <h1 class="font-weight-700 middle">Contact Me</h1>
+            </div>
+            <div>
+            <p class="font-size16 border-bottom" style="width: 100%; padding-left: 15px;"><strong>Name:</strong> Samantha Ortiz de Foronda Rojas</p>
+            <p class="font-size16 border-bottom" style="width: 100%;padding-left: 15px;"><strong>Phone Number:</strong> (437) 436 2944</p>
+            <p class="font-size16 border-bottom" style="width: 100%;padding-left: 15px;"><strong>Email:</strong> sortizde@my.centennialcollege.ca</p>
+            <p class="font-size16 border-bottom" style="width: 100%;padding-left: 15px;"><strong>Address:</strong> 8 Thatcher Ave</p>
+            <br>
+            </div>
+        </div>
+        <br>
+        <h2 class="font-weight-700" Style="padding-left: 15px;">Fill the information</h2>
+        <br>
+        <form style="margin-bottom: 100px;">
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control" placeholder="First Name">
+                <br>
+              </div>
+              <div class="col-sm-6">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name">
+                <br>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="contact-number">Contact Number</label>
+                <input type="text" class="form-control" placeholder="Contact Number">
+                <br>
+              </div>
+                <div class="col-sm-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                    <br>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12" style="padding-left: 15px;">
+                    <label for="message">Message</label>
+                <textarea class="form-control" style = "align-items: center; width: 100%" placeholder="Message"></textarea>
+                <br>
+                </div>
+                <button type="submit" class="btn white" style="width: 100%; position: relative;">Send Message</button>
+                </div>
+          </form>
+        </body>
+
+<!--Script section-->
+<%-include partials/bottom_nav.ejs%>
+<%-include partials/footer.ejs%>
