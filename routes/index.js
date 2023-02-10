@@ -20,6 +20,8 @@ router.get('/contactme', function(req, res, next) {
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'Services' });
 });
-
+router.post('/contactme', function(req, res, next) {
+  res.render('home', { title: 'Home' });
+});
 
 module.exports = router;
