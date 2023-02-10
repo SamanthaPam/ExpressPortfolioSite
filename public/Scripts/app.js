@@ -1,6 +1,8 @@
 (function () {
     function start() {
-        console.log("App Started...");
+        console.log("App Started..."); 
+        
     }
+    
     window.addEventListener("load", start);
 })();

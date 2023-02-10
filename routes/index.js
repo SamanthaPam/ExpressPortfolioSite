@@ -20,8 +20,15 @@ router.get('/contactme', function(req, res, next) {
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'Services' });
 });
-router.post('/contactme', function(req, res, next) {
+router.post('/contactme', function (req, res, next) {
+  const { first, last, number, email, message } = req.body;
+  console.log('First Name user: ', first);
+  console.log('Last Name user: ', last);
+  console.log('Number user: ', number);
+  console.log('Email user: ', email);
+  console.log('Message user: ', message);
   res.render('home', { title: 'Home' });
 });
+
 
 module.exports = router;
